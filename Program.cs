@@ -1,28 +1,24 @@
-﻿// Greetings.cs
-using System;
+﻿using System;
 
-// This class contains methods for greeting messages
-public class Greetings
-{
-    // Method to print a welcome message
-    public void Welcome()
-    {
-        Console.WriteLine("Welcome to our C# program!");
-    }
-
-    // Method to print a personalized greeting message
-    public void Hello(string name)
-    {
-        Console.WriteLine($"{name}, thank you for joining us today!");
-    }
-}
-
-// Program.cs
-using System;
-
-// Main program class
+// Main program class containing Greetings functionality
 class Program
 {
+    // Greetings class nested within Program
+    public class Greetings
+    {
+        // Method to print a welcome message
+        public void Welcome()
+        {
+            Console.WriteLine("Welcome to our C# program!");
+        }
+
+        // Method to print a personalized greeting message
+        public void Hello(string name)
+        {
+            Console.WriteLine($"{name}, thank you for joining us today!");
+        }
+    }
+
     static void Main()
     {
         // Create an instance of the Greetings class
